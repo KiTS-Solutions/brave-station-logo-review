@@ -146,6 +146,15 @@ tr:last-child td{border-bottom:0}
 .beats{list-style:none;padding:0;margin:18px 0;display:grid;gap:8px;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));font-size:14px}
 .beats li{display:flex;gap:10px}
 .beats b{font-variant-numeric:tabular-nums;min-width:44px;color:var(--terra)}
+.dl-grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));margin:20px 0 12px;align-items:start}
+.dl-card{margin:0;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:12px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.dl-media{background:var(--paper);border-radius:12px;overflow:hidden;display:flex;justify-content:center}
+.dl-media video,.dl-media img{display:block;width:100%;height:auto;max-height:420px;object-fit:contain;max-width:100%}
+.dl-card figcaption{display:flex;flex-direction:column;gap:4px;padding:0 4px 4px}
+.dl-spec{font-size:13px;color:var(--slate);font-variant-numeric:tabular-nums}
+.dl-best{font-size:14px}
+.dl{margin-top:8px;align-self:flex-start;display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:999px;background:var(--night);color:var(--paper);text-decoration:none;font-weight:600;font-size:15px}
+.dl:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
 footer{padding:28px 0 48px;font-size:13px;color:var(--slate);border-top:1px solid var(--line)}
 </style>
 </head>
@@ -153,7 +162,7 @@ footer{padding:28px 0 48px;font-size:13px;color:var(--slate);border-top:1px soli
 <div class="top"><div class="wrap"><span>The Brave Station · Logo directions · Round 4</span><span class="status">Draft for review</span></div></div>
 <nav class="jump" aria-label="Sections"><div class="wrap">
   <a href="#changes">What changed</a><a href="#direction-1">1 Refined Stairway</a><a href="#direction-2">2 Toddler Stair</a>
-  <a href="#direction-3">3 Within Reach</a><a href="#square">3B square</a><a href="#mix">Mix and match</a><a href="#compare">At a glance</a><a href="#reply">Your choice</a>
+  <a href="#direction-3">3 Within Reach</a><a href="#square">3B square</a><a href="#motion">3B motion</a><a href="#downloads">Downloads</a><a href="#mix">Mix and match</a><a href="#compare">At a glance</a><a href="#reply">Your choice</a>
 </div></nav>
 <main>
 <div class="intro"><div class="wrap">
@@ -503,6 +512,39 @@ animation:mh-star 0.8s cubic-bezier(.2,.8,.2,1) 3.5s both,mh-breathe 3.2s ease-i
   <p><button type="button" class="replay" id="replay">Replay the animation</button></p>
   <ol class="beats"><li><b>0.0 s</b>The floor draws in, then the stair builds one riser at a time.</li><li><b>1.2 s</b>The parent rises into place.</li><li><b>1.7 s</b>The toddler hops up onto the first step.</li><li><b>2.4 s</b>Their hands join.</li><li><b>2.9 s</b>The toddler’s free arm swings up to reach.</li><li><b>3.5 s</b>The North Star ignites, still ahead.</li><li><b>3.8 s</b>A thread of gold light runs up the stair toward it.</li><li><b>4.4 s</b>The name rises into place.</li><li><b>5.3 s</b>Loop: the star breathes and the hand keeps reaching.</li></ol>
   <p class="muted">For anyone who has turned on reduced motion, and in print, the logo shows its final, still frame.</p>
+</div></section>
+
+<section id="downloads"><div class="wrap">
+  <div class="dir-head"><span class="dir-num">3B</span><h2>Download for social</h2><span class="tag">New</span></div>
+  <p class="lead">The 3B animation, ready to post. The videos are silent, because social feeds autoplay without sound.</p>
+  <div class="dl-grid">
+    <figure class="dl-card">
+      <div class="dl-media"><video src="downloads/the-brave-station-3b-sting-1080x1080.mp4" poster="downloads/the-brave-station-3b-sting-1080x1080-poster.jpg" width="1080" height="1080" muted playsinline loop controls preload="none" aria-label="Square video preview"></video></div>
+      <figcaption><b>Square video</b><span class="dl-spec">1080 × 1080 · 9 s · MP4 · 330 KB</span>
+      <span class="dl-best">Best for: Instagram feed, LinkedIn, Facebook, WhatsApp</span>
+      <a class="dl" href="downloads/the-brave-station-3b-sting-1080x1080.mp4" download="the-brave-station-3b-sting-1080x1080.mp4">Download MP4</a></figcaption>
+    </figure>
+    <figure class="dl-card">
+      <div class="dl-media"><video src="downloads/the-brave-station-3b-sting-1080x1920.mp4" poster="downloads/the-brave-station-3b-sting-1080x1920-poster.jpg" width="1080" height="1920" muted playsinline loop controls preload="none" aria-label="Vertical video preview"></video></div>
+      <figcaption><b>Vertical video</b><span class="dl-spec">1080 × 1920 · 9 s · MP4 · 419 KB</span>
+      <span class="dl-best">Best for: Instagram Reels and Stories, TikTok, WhatsApp Status</span>
+      <a class="dl" href="downloads/the-brave-station-3b-sting-1080x1920.mp4" download="the-brave-station-3b-sting-1080x1920.mp4">Download MP4</a></figcaption>
+    </figure>
+    <figure class="dl-card">
+      <div class="dl-media"><img src="downloads/the-brave-station-3b-stacked.gif" width="480" height="604" loading="lazy" alt="Animated logo GIF preview"></div>
+      <figcaption><b>Animated logo GIF</b><span class="dl-spec">480 × 604 · 8 s · GIF · 839 KB</span>
+      <span class="dl-best">Best for: Email signatures and WhatsApp chats</span>
+      <a class="dl" href="downloads/the-brave-station-3b-stacked.gif" download="the-brave-station-3b-stacked.gif">Download GIF</a></figcaption>
+    </figure>
+    <figure class="dl-card">
+      <div class="dl-media"><img src="downloads/the-brave-station-3b-square.gif" width="480" height="490" loading="lazy" alt="Animated symbol GIF preview"></div>
+      <figcaption><b>Animated symbol GIF</b><span class="dl-spec">480 × 490 · 8 s · GIF · 898 KB</span>
+      <span class="dl-best">Best for: Profile pictures and chat stickers</span>
+      <a class="dl" href="downloads/the-brave-station-3b-square.gif" download="the-brave-station-3b-square.gif">Download GIF</a></figcaption>
+    </figure>
+  </div>
+  <p class="muted">On iPhone, a video opens instead of downloading: tap Share, then Save Video. These files are drafts
+  for review, so please keep them private until the logo is approved.</p>
 </div></section>
 <section id="mix"><div class="wrap">
   <h2>Mix and match</h2>
